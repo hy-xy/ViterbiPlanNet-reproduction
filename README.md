@@ -19,8 +19,8 @@
     </tr>
     <tr>
       <th>SR(%)↑</th><th>mAcc(%)↑</th><th>mIoU(%)↑</th><th>Params(M)</th>
-      <th>SR(%)</th><th>mAcc(%)</th><th>mIoU(%)</th><th>Params(M)</th>
-      <th>SR(%)</th><th>mAcc(%)</th><th>mIoU(%)</th><th>Params(M)</th>
+      <th>SR(%)↑</th><th>mAcc(%)↑</th><th>mIoU(%)↑</th><th>Params(M)</th>
+      <th>SR(%)↑</th><th>mAcc(%)↑</th><th>mIoU(%)↑</th><th>Params(M)</th>
     </tr>
   </thead>
   <tbody>
