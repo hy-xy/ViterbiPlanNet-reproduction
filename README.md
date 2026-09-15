@@ -1,1 +1,28 @@
-# ViterbiPlanNet-reproduction
+# ViterbiPlanNet 复现验证
+
+对论文《ViterbiPlanNet: Injecting Procedural Knowledge via Differentiable Viterbi for Planning in Instructional Videos》（CVPR 2026）的复现验证。
+
+- 基于原论文作者官方开源代码完成复现与验证，未对代码进行任何修改。
+- 本仓库为个人复现记录，非原创工作。
+- 原论文官方代码：https://github.com/Gigi-G/ViterbiPlanNet
+
+## 复现结果
+
+| T | 数据集 | 指标 | 复现 | 论文 |
+|---|---|---|---|---|
+| 3 | CrossTask | SR / mAcc / mIoU / Params(M) | 38.76 / 63.28 / 84.03 / 5.55 | 38.45 / 63.07 / 83.89 / 5.57 |
+| 3 | COIN | SR / mAcc / mIoU / Params(M) | 34.04 / 50.89 / 84.26 / 6.07 | 33.99 / 50.87 / 83.88 / 6.67 |
+| 3 | NIV | SR / mAcc / mIoU / Params(M) | 32.22 / 47.16 / 74.59 / 5.48 | 32.37 / 46.96 / 73.85 / 5.48 |
+| 4 | CrossTask | SR / mAcc / mIoU / Params(M) | 24.54 / 56.74 / 81.26 / 5.58 | 24.64 / 57.00 / 81.18 / 5.6 |
+| 4 | COIN | SR / mAcc / mIoU / Params(M) | 23.86 / 45.43 / 82.29 / 6.27 | 23.92 / 45.63 / 82.56 / 6.87 |
+| 4 | NIV | SR / mAcc / mIoU / Params(M) | 27.19 / 47.37 / 75.68 / 5.49 | 27.54 / 45.55 / 74.71 / 5.50 |
+| 5 | CrossTask | SR / mAcc / mIoU / Params(M) | 16.14 / 53.38 / 79.58 / 5.62 | 15.97 / 53.30 / 79.56 / 5.64 |
+| 5 | COIN | SR / mAcc / mIoU / Params(M) | 15.67 / 39.43 / 81.59 / 6.47 | 15.87 / 39.42 / 81.19 / 7.07 |
+| 5 | NIV | SR / mAcc / mIoU / Params(M) | 22.99 / 42.14 / 73.90 / 5.51 | 23.10 / 42.97 / 74.81 / 5.51 |
+| 6 | CrossTask | SR / mAcc / mIoU / Params(M) | 10.48 / 49.35 / 77.66 / 5.65 | 10.37 / 49.25 / 78.01 / 5.67 |
+| 6 | COIN | SR / mAcc / mIoU / Params(M) | 12.68 / 35.74 / 78.49 / 6.67 | 13.11 / 36.03 / 79.35 / 7.27 |
+| 6 | NIV | SR / mAcc / mIoU / Params(M) | 18.24 / 44.82 / 75.27 / 5.52 | 18.78 / 45.77 / 75.91 / 5.52 |
+
+## 说明
+- 复现结果与论文报告值高度接近，验证了可微分 Viterbi 层与过程知识图谱端到端训练的有效性。
+- 数据集与模型权重较大，未上传至仓库。
