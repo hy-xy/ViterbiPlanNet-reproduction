@@ -8,16 +8,51 @@
 
 ## 复现结果
 
-T		Crosstask	COIN	NIV
-		SR(%)↑	mAcc(%)↑	MIoU(%)↑	Params(M)	SR(%)	mAcc(%)	MIoU(%)	Params(M)	SR(%)	mAcc(%)	MIoU(%)	Params(M)
-3	复现	38.76	63.28	84.03	5.55	34.04	50.89	84.26	6.07	32.22	47.16	74.59	5.48
-	论文	38.45	63.07	83.89	5.57	33.99	50.87	83.88	6.67	32.37	46.96	73.85	5.48
-4	复现	24.54	56.74	81.26	5.58	23.86	45.43	82.29	6.27	27.19	47.37	75.68	5.49
-	论文	24.64	57.00	81.18	5.6	23.92	45.63	82.56	6.87	27.54	45.55	74.71	5.50
-5	复现	16.14	53.38	79.58	5.62	15.67	39.43	81.59	6.47	22.99	42.14	73.90	5.51
-	论文	15.97	53.30	79.56	5.64	15.87	39.42	81.19	7.07	23.10	42.97	74.81	5.51
-6	复现	10.48	49.35	77.66	5.65	12.68	35.74	78.49	6.67	18.24	44.82	75.27	5.52
-	论文	10.37	49.25	78.01	5.67	13.11	36.03	79.35	7.27	18.78	45.77	75.91	5.52
+<table border="1" cellspacing="0" cellpadding="5" style="text-align: center; width: 100%; border-collapse: collapse;">
+  <thead>
+    <tr>
+      <th rowspan="2">T</th>
+      <th colspan="4">CrossTask</th>
+      <th colspan="4">COIN</th>
+      <th colspan="4">NIV</th>
+    </tr>
+    <tr>
+      <th>SR(%)↑</th><th>mAcc(%)↑</th><th>mIoU(%)↑</th><th>Params(M)</th>
+      <th>SR(%)</th><th>mAcc(%)</th><th>mIoU(%)</th><th>Params(M)</th>
+      <th>SR(%)</th><th>mAcc(%)</th><th>mIoU(%)</th><th>Params(M)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">3</td>
+      <td>复现</td><td>38.76</td><td>63.28</td><td>84.03</td><td>5.55</td><td>34.04</td><td>50.89</td><td>84.26</td><td>6.07</td><td>32.22</td><td>47.16</td><td>74.59</td><td>5.48</td>
+    </tr>
+    <tr>
+      <td>论文</td><td>38.45</td><td>63.07</td><td>83.89</td><td>5.57</td><td>33.99</td><td>50.87</td><td>83.88</td><td>6.67</td><td>32.37</td><td>46.96</td><td>73.85</td><td>5.48</td>
+    </tr>
+    <tr>
+      <td rowspan="2">4</td>
+      <td>复现</td><td>24.54</td><td>56.74</td><td>81.26</td><td>5.58</td><td>23.86</td><td>45.43</td><td>82.29</td><td>6.27</td><td>27.19</td><td>47.37</td><td>75.68</td><td>5.49</td>
+    </tr>
+    <tr>
+      <td>论文</td><td>24.64</td><td>57.00</td><td>81.18</td><td>5.6</td><td>23.92</td><td>45.63</td><td>82.56</td><td>6.87</td><td>27.54</td><td>45.55</td><td>74.71</td><td>5.50</td>
+    </tr>
+    <tr>
+      <td rowspan="2">5</td>
+      <td>复现</td><td>16.14</td><td>53.38</td><td>79.58</td><td>5.62</td><td>15.67</td><td>39.43</td><td>81.59</td><td>6.47</td><td>22.99</td><td>42.14</td><td>73.90</td><td>5.51</td>
+    </tr>
+    <tr>
+      <td>论文</td><td>15.97</td><td>53.30</td><td>79.56</td><td>5.64</td><td>15.87</td><td>39.42</td><td>81.19</td><td>7.07</td><td>23.10</td><td>42.97</td><td>74.81</td><td>5.51</td>
+    </tr>
+    <tr>
+      <td rowspan="2">6</td>
+      <td>复现</td><td>10.48</td><td>49.35</td><td>77.66</td><td>5.65</td><td>12.68</td><td>35.74</td><td>78.49</td><td>6.67</td><td>18.24</td><td>44.82</td><td>75.27</td><td>5.52</td>
+    </tr>
+    <tr>
+      <td>论文</td><td>10.37</td><td>49.25</td><td>78.01</td><td>5.67</td><td>13.11</td><td>36.03</td><td>79.35</td><td>7.27</td><td>18.78</td><td>45.77</td><td>75.91</td><td>5.52</td>
+    </tr>
+  </tbody>
+</table>
 
 ## 说明
 - 复现结果与论文报告值高度接近，验证了可微分 Viterbi 层与过程知识图谱端到端训练的有效性。
